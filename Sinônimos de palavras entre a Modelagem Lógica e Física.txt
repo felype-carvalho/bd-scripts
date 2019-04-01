@@ -1,0 +1,4 @@
+Domínio - Banco de Dados
+Estidade - Tabela
+Atributo - Campo
+Ocorrência - Registro

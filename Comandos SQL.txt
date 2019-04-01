@@ -1,0 +1,4 @@
+Show DATABASES;					 -- Mostra os Bancos de Dados já exixtentes.
+Create DATABASE *nome*;				 -- Cria um Banco de Dados.
+SOURCE *caminho(ex: c:\BD\teste.sql)*;		 --  Executa um Script.
+Drop DATABASE *nome do banco*;			 -- Apaga um Banco de Dados.
