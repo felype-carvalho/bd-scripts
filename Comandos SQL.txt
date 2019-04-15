@@ -1,7 +1,7 @@
-show databases;								 -- Mostra os Bancos de Dados já exixtentes.
+show databases;							 -- Mostra os Bancos de Dados já exixtentes.
 create database *nome*;						 -- Cria um Banco de Dados.
 create table *nome*;						 -- Cria uma Tabela.
 use *nome do banco*;						 -- Muda o Banco usado.
-source *caminho(ex: c:\BD\teste.sql)*		 -- Executa um Script.
-drop database *nome do banco*;			 	 -- Apaga um Banco de Dados.
+source *caminho(ex: c:\BD\teste.sql)*		 	       	 -- Executa um Script.
+drop database *nome do banco*;			 		 -- Apaga um Banco de Dados.
 describe *nome da tabela*			 		 -- Descreve a tábela citada.

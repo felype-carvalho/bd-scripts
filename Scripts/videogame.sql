@@ -3,12 +3,14 @@ use videogames;
 
 create table Endereco(
 idEndereco_idTipoLocal int,
+TipoLocal_idTipoLocal int,
 Pessoa_idPessoa int,
 Logradouro_Endereco varchar(70),
 Numero_Endereco int,
 Complemento_Endereco varchar(100),
 Bairro_Endereco int,
 CEP_Encereco varchar(9),
+Cidade_Endereco varchar(30),
 Estado_Encereco char(2)
 );
 
@@ -21,13 +23,14 @@ CPF_Pessoa varchar(14)
 );
 
 create table TipoPessoa (
-TipoPessoa int
+idTipoPessoa int
 );
 
 create table Cliente (
 idCliente int,
-Pessoa_Cliente varchar(80),
+Pessoa_idPessoa int,
 Pai_Cliente varchar(80),
+Mae_Cliente varchar(80),
 Nick_Cliente varchar(12),
 Senha_Cliente varchar(8)
 );
@@ -60,7 +63,7 @@ create table Funcionario (
 idFuncionario int,
 Pessoa_idPessoa int,
 Sexo char(1),
-idade int
+Idade int
 );
 
 create table TipoLocal (
