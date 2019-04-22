@@ -5,3 +5,14 @@ use *nome do banco*;						 -- Muda o Banco usado.
 source *caminho(ex: c:\BD\teste.sql)*		 	       	 -- Executa um Script.
 drop database *nome do banco*;			 		 -- Apaga um Banco de Dados.
 describe *nome da tabela*			 		 -- Descreve a tábela citada.
+
+
+Tipos de Constraint:
+1-Primary Key
+2-Foreign Key
+3-Default
+4-Not Null
+5-Unique
+6-Check
+7-Auto_Increment
+8-Upper/Lower

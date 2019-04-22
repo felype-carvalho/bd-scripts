@@ -1,8 +1,8 @@
 create database videogames;
 use videogames;
 
-create table Endereco(
-idEndereco_idTipoLocal int,
+create table Enderecos (
+idEndereco int primary key not null,
 TipoLocal_idTipoLocal int,
 Pessoa_idPessoa int,
 Logradouro_Endereco varchar(70),
@@ -14,29 +14,30 @@ Cidade_Endereco varchar(30),
 Estado_Encereco char(2)
 );
 
-create table Pessoa (
-idPessoa int,
+create table Pessoas (
+idPessoa int primary key not null,
 TipoPessoa_idTipoPessoa int,
 Nome_Pessoa varchar(80),
 RG_Pessoa varchar(10),
 CPF_Pessoa varchar(14)
 );
 
-create table TipoPessoa (
-idTipoPessoa int
+create table TipoPessoas (
+idTipoPessoa int primary key not null,
+Descricao_TipoPessoa varchar(20)
 );
 
-create table Cliente (
-idCliente int,
-Pessoa_idPessoa int,
+create table Clientes (
+idCliente int primary key not null,
+Pessoa_idPessoa int not null,
 Pai_Cliente varchar(80),
 Mae_Cliente varchar(80),
-Nick_Cliente varchar(12),
+Nick_Cliente varchar(12) not null,
 Senha_Cliente varchar(8)
 );
 
-create table Aluguel (
-idAluguel int,
+create table Alugueis (
+idAluguel int primary key not null,
 Funcionario_idFuncionario int,
 VideoGame_idVideoGame int,
 Cliente_idCliente int,
@@ -46,7 +47,7 @@ Data_Aluguel date
 );
 
 create table Jogos (
-idJogos int,
+idJogos int primary key not null,
 Nome_Jogo varchar(30),
 Descricao_Jogo varchar(120),
 Genero_Jogo varchar(20),
@@ -54,25 +55,25 @@ Produtora_Jogo varchar(40)
 );
 
 create table VideoGames (
-idVideoGame int,
+idVideoGame int primary key not null,
 Modelo_VideoGame varchar(20),
 NS_VideoGame varchar(24)
 );
 
-create table Funcionario (
-idFuncionario int,
+create table Funcionarios (
+idFuncionario int primary key not null,
 Pessoa_idPessoa int,
 Sexo char(1),
 Idade int
 );
 
-create table TipoLocal (
-idTipoLocal int,
+create table TiposLocal (
+idTipoLocal int primary key not null,
 Descricao_TipoLocal varchar(30)
 );
 
-create table Contato (
-idContato int,
+create table Contatos (
+idContato int primary key not null,
 TipoLocal_idTipoLocal int,
 Pessoa_idPessoa int,
 Telefone_Contato varchar(13),
