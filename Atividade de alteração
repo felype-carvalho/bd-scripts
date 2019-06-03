@@ -1,0 +1,41 @@
+Alteração de Tabela
+
+- Acrescentar novas colunas:
+	Alter Table cliente
+	Add Email Varchar (80) unique
+
+- Acrescentar novas constraints:
+	Alter Table cliente Add
+	Primary Key (cdcliente)
+
+- Modificar colunas
+	Alter Table Cliente Modify email varchar (100) not null
+
+- Excluindo Elementos
+	a) Exclusão de coluna:
+		- Alter Table cliente delete email
+	b) Exclusão de constraint de tabela:
+		- Alter table cliente delete primary key
+	c) Exclusão de constraint de tabela:
+		- Alter table cliente delete foreign key pedido_cliente_fk
+
+- Troca nome de elementos
+	a) Alteração de elementos
+		- Alter table cliente rename cli
+	b) Alteração de nome de coluna:
+		- Alter table cliente rename
+		- nome_cliente to nmcliente
+
+- Eliminando uma tabela
+	- Drop table Cliente
+
+- Atividade sobre o projeto
+	videogame:
+
+1 - Altere o Atibuto sexo para char(1) da tabela funcionário;
+
+2 - Inclua no atributo sexo a contraint check e upper
+
+3 - Deixe o atributo sexo como null
+
+4 - Na tabela pessoa mude o atributo  cpf para varchar (11) e unique;
