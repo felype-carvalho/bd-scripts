@@ -37,7 +37,7 @@ foreign key (Pessoa_idPessoa) references Pessoas(idPessoa)
 
 create table Jogos (
 idJogos int primary key auto_increment not null,
-Nome_Jogo varchar(30),
+Nome_Jogo varchar(50),
 Descricao_Jogo varchar(120),
 Genero_Jogo varchar(20),
 Produtora_Jogo varchar(40)
@@ -55,7 +55,7 @@ foreign key (Pessoa_idPessoa) references Pessoas(idPessoa)
 
 create table VideoGames (
 idVideoGame int primary key auto_increment not null,
-Modelo_VideoGame varchar(20),
+Modelo_VideoGame varchar(35),
 NS_VideoGame varchar(24)
 );
 

@@ -1,0 +1,23 @@
+incluir dados em tabelas
+
+insert into autor
+	values (1, 'Renato Russo');
+
+insert into autor (cdautor, nmautor) values (2, 'Tom Jobim');
+
+ATT dos dados
+
+-update cd set preco_venda = is where codigo_cd = 1;
+-update cd set where codigo_gravadora = 2;
+-update cd set preco_venda = preco_venda * 1.05 where codigo_gravadora = 2;
+-update cd set preco_venda = preco_venda * 1.05;
+-update itempedido set vltotalitem = ulunitario * nrqtde where cdpedido = 1 and nritem =1;
+
+EXCLUSÃO
+
+ delete from autor
+	where cd autor = 1;
+ delete from cd where
+	cod_gravadora = 2;
+ delete from musica; 
+ 
