@@ -14,9 +14,9 @@ Descricao_TipoPessoa varchar(20)
 create table Pessoas (
 idPessoa int primary key auto_increment not null,
 TipoPessoa_idTipoPessoa int,
-Nome_Pessoa varchar(80),
-RG_Pessoa varchar(10),
-CPF_Pessoa varchar(14),
+Nome_Pessoa varchar(90),
+RG_Pessoa varchar(11),
+CPF_Pessoa varchar(16),
 foreign key (TipoPessoa_idTipoPessoa) references TipoPessoas(idTipoPessoa)
 );
 
@@ -24,12 +24,12 @@ create table Enderecos (
 idEndereco int primary key auto_increment not null,
 TipoLocal_idTipoLocal int,
 Pessoa_idPessoa int,
-Logradouro_Endereco varchar(70),
+Logradouro_Endereco varchar(75),
 Numero_Endereco int,
-Complemento_Endereco varchar(100),
-Bairro_Endereco int,
-CEP_Encereco varchar(9),
-Cidade_Endereco varchar(30),
+Complemento_Endereco varchar(110),
+Bairro_Endereco varchar(50),
+CEP_Encereco varchar(10),
+Cidade_Endereco varchar(40),
 Estado_Encereco char(2),
 foreign key (TipoLocal_idTipoLocal) references TiposLocal(idTipoLocal),
 foreign key (Pessoa_idPessoa) references Pessoas(idPessoa)
